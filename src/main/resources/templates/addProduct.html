@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"   xmlns: th="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>spring add product tutorial</title>
+</head>
+<body>
+    <h1>Page to add product </h1>
+
+    <form action = "#" th:action="@{/product}" th:object="${product}" method="post">
+        <p> Price : <input type = "text" th:field="*{price}" /> </p>
+        <p> Description : <input type = "text" th:field="*{description}" /></p>
+        <p> info : <input type = "text "  th:field="*{info}" /></p>
+        <p><input type ="submit"  value = "submit" /> <input type ="reset" value = "Reset" />
+
+</p>
+        </form>
+</body>
+</html>
